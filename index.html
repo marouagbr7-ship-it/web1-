@@ -2,12 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Web Dev Lab 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev Lab 1 - Guebouri Maroua</title>
     <style>
+        h1 {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
         .style1 {
             color: red;
             text-align: center;
+            text-decoration: underline;
             font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+            margin-top: 20px;
+            font-family: 'Cambria', serif;
         }
         .style2 {
             color: green;
@@ -17,15 +32,17 @@
         }
         .style3 {
             font-size: 14px;
+            color: black;
         }
         .style4 {
             width: 250px;
             height: 250px;
-            display: flex;
-            margin-top: 15px;
+            border: 1px solid #000;
+            object-fit: cover;
         }
-        h1 {
-            text-align: center;
+
+        .info-text {
+            line-height: 1.8;
         }
     </style>
 </head>
@@ -34,29 +51,19 @@
     <h1>Welcome to my Web Site</h1>
 
     <div class="style1">
-        <u>Web Development (Lab1)</u>
+        Web Development (Lab1)
     </div>
 
-    <br>
+    <div class="container">
+        <div class="info-text">
+            <p><span class="style2">Full name:</span> <span class="style3">Guebouri Maroua</span></p>
+            <p><span class="style2">Age:</span> <span class="style3">20 years old</span></p>
+            <p><span class="style2">Class:</span> <span class="style3">2<sup>nd</sup> LMD Computer Science</span></p>
+            <p><span class="style2">University:</span> <span class="style3">University of El OUED</span></p>
+        </div>
 
-    <p>
-        <span class="style2">Full name:</span> 
-        <span class="style3">Guebouri Maroua</span>
-    </p>
-    <p>
-        <span class="style2">Age:</span> 
-        <span class="style3">20 years old</span>
-    </p>
-    <p>
-        <span class="style2">Class:</span> 
-        <span class="style3">2<sup>nd</sup> LMD Computer Science</span>
-    </p>
-    <p>
-        <span class="style2">University:</span> 
-        <span class="style3">University of El OUED</span>
-    </p>
-
-    <img src="image.png" alt="Styled Web Page Screenshot" class="style4">
+        <img src="image.png" alt="Lab Image" class="style4">
+    </div>
 
 </body>
 </html>
